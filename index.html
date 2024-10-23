@@ -7,43 +7,68 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
+            background-color: #000;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
         }
         .container {
+            text-align: center;
             margin-top: 50px;
+            flex-grow: 1;
         }
         h1 {
-            color: #333;
+            color: #fff;
         }
         .button {
             display: inline-block;
             margin: 10px;
             padding: 15px 25px;
             font-size: 16px;
-            color: #fff;
-            background-color: #0073b1;
+            color: #000;
+            background-color: #ffcc00;
             border: none;
             border-radius: 5px;
             text-decoration: none;
             cursor: pointer;
         }
         .button.github {
-            background-color: #333;
+            background-color: #ff5733;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .nav-left, .nav-right {
+            display: flex;
+        }
+        .contact-info {
+            color: #fff;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
+    <nav>
+        <div class="nav-left">
+            <a href="about.html" class="button">About Me</a>
+            <a href="projects.html" class="button">Projects</a>
+        </div>
+        <div class="nav-right">
+            <a href="https://github.com/yourusername" class="button github">GitHub</a>
+            <a href="https://www.linkedin.com/in/yourusername" class="button">LinkedIn</a>
+        </div>
+    </nav>
     <div class="container">
         <h1>Contact Information</h1>
-        <a href="https://github.com/yourusername" class="button github">GitHub</a>
-        <a href="https://www.linkedin.com/in/yourusername" class="button">LinkedIn</a>
+        <div class="contact-info">
+            <p>Your Name</p>
+            <p>Your Phone Number</p>
+            <p>Your Email</p>
+        </div>
     </div>
 </body>
 </html>
-<nav>
-    <a href="about.html" class="button">About Me</a>
-    <a href="projects.html" class="button">Projects</a>
-</nav>
