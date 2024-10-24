@@ -13,7 +13,6 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            flex-direction: column;
             justify-content: center;
             height: 100vh;
         }
@@ -44,6 +43,7 @@
             display: flex;
             justify-content: space-between;
             padding: 10px;
+            width: 100%;
         }
         .nav-left, .nav-right {
             display: flex;
@@ -51,6 +51,22 @@
         .contact-info {
             color: #fff;
             margin-top: 20px;
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav-left, .nav-right {
+                flex-direction: column;
+                align-items: center;
+            }
+            .button {
+                width: 100%;
+                max-width: 300px;
+            }
         }
     </style>
 </head>
