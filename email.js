@@ -13,7 +13,7 @@ function SendEmail()
     if (!ValidateEmail(email)) {
         return;
     };
-    emailjs.sendForm('service_gdhfpvl', 'template_tu4azsd', '#commentForm')
+    emailjs.sendForm('service_1dqntkw', 'template_onksp77', '#commentForm')
         .then(function (response) {
             console.log('SUCCESS!', response.status, response.text);
             window.open('contact_finish.html');
