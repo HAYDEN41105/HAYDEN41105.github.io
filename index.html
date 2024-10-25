@@ -1,93 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-    <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-(function(){
-   emailjs.init("ZfnBuVdUv1mGDAwy3");
-})();
-</script>
+<html lang="en">   
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Information</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #000;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-        .container {
-            text-align: center;
-            margin-top: 50px;
-            flex-grow: 1;
-        }
-        h1 {
-            color: #fff;
-        }
-        .button {
-            display: inline-block;
-            margin: 10px;
-            padding: 15px 25px;
-            font-size: 16px;
-            color: #000;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        /* Individual button colors */
-        .button.about {
-            background-color: #ffcc00; /* About Me button color */
-        }
-        .button.projects {
-            background-color: #4CAF50; /* Projects button color */
-        }
-        .button.github {
-            background-color: #ff5733; /* GitHub button color */
-        }
-        .button.linkedin {
-            background-color: #0077b5; /* LinkedIn button color */
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px;
-            width: 100%;
-        }
-        .nav-left, .nav-right {
-            display: flex;
-        }
-        .contact-info {
-            color: #fff;
-            margin-top: 20px;
-        }
-
-        /* Media Queries for responsiveness */
-        @media (max-width: 768px) {
-            nav {
-                flex-direction: column;
-                align-items: center;
-            }
-            .nav-left, .nav-right {
-                flex-direction: column;
-                align-items: center;
-            }
-            .button {
-                width: 100%;
-                max-width: 300px;
-            }
-        }
-    </style>
+<link rel="stylesheet" href="styles.css">   
 </head>
 <body>
     <div id="particles-js"></div>
@@ -116,5 +33,13 @@
       </form>
     <script src="email.js"></script>
     <script src="particles.js"></script>
+<script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+emailjs.init("ZfnBuVdUv1mGDAwy3");
+})();
+</script>
 </body>
 </html>
