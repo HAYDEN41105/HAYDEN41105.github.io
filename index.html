@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">   
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Information</title>
-<link rel="stylesheet" href="styles.css">   
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div id="particles-js"></div>
     <nav>
@@ -17,6 +19,9 @@
             <a href="https://github.com/HAYDEN41105" class="button github" target="_blank">GitHub</a>
             <a href="https://www.linkedin.com/in/hayden--brown/" class="button linkedin" target="_blank">LinkedIn</a>
         </div>
+        <div class="nav-middle">
+            <a href="contact.html" class="button-contact">Contact</a>
+        </div>
     </nav>
     <div class="container">
         <h1>Contact Information</h1>
@@ -25,21 +30,8 @@
             <p>haydentbrown@gmail.com</p>
         </div>
     </div>
-    <form onsubmit="event.preventDefault(); javascript:SendEmail();" id="commentForm">      
-        <input name="from_name" type="text" class="feedback-input" placeholder="Name"/>   
-        <input name="reply_to" type="text" class="feedback-input" placeholder="Email"/>
-        <textarea name="message" class="feedback-input" placeholder="Comment"></textarea>
-        <input type="submit" value="SUBMIT"/>
-      </form>
-    <script src="email.js"></script>
-    <script src="particles.js"></script>
-<script type="text/javascript"
-src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-(function(){
-emailjs.init("ZfnBuVdUv1mGDAwy3");
-})();
-</script>
+   
 </body>
+
 </html>
+

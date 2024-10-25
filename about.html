@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,31 +11,44 @@
          font-family: Arial, sans-serif;
          background-color: black;
          color: #ffcc00;
-         height: 100vh; /* Full viewport height */
-         margin: 0; /* Remove default margin */
+         height: 100vh;
+         /* Full viewport height */
+         margin: 0;
+         /* Remove default margin */
       }
+
       .image-container {
-         flex: 1; /* Take up one part of the space (50%) */
-         max-width: 50%; /* Limit to 50% of the screen width */
+         flex: 1;
+         /* Take up one part of the space (50%) */
+         max-width: 50%;
+         /* Limit to 50% of the screen width */
          display: flex;
          justify-content: center;
          align-items: center;
-         background-color: #222; /* Optional: background for left side */
+         background-color: #222;
+         /* Optional: background for left side */
       }
+
       .image-container img {
-         width: 100%; /* Auto-scale to fill the container */
-         height: auto; /* Maintain aspect ratio */
+         width: 100%;
+         /* Auto-scale to fill the container */
+         height: auto;
+         /* Maintain aspect ratio */
       }
+
       .description {
-         flex: 1; /* Take up the remaining 50% */
+         flex: 1;
+         /* Take up the remaining 50% */
          padding: 20px;
-         color: #ffcc00; /* Text color */
+         color: #ffcc00;
+         /* Text color */
          display: flex;
          flex-direction: column;
          justify-content: center;
       }
    </style>
 </head>
+
 <body>
    <div class="image-container">
       <img src="pfp.jpg" alt="Profile Picture">
@@ -44,9 +58,11 @@
       <p>Student at the College of Central Florida</p>
    </div>
 </body>
-</html>
 <div style="position: absolute; bottom: 20px; right: 20px;">
    <a href="index.html">
-      <button style="background-color: #ffcc00; color: black; border: none; padding: 10px 20px; cursor: pointer;">Home</button>
+      <button
+         style="background-color: #ffcc00; color: black; border: none; padding: 10px 20px; cursor: pointer;">Home</button>
    </a>
 </div>
+
+</html>
